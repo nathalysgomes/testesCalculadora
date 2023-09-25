@@ -50,84 +50,84 @@ public class CalcularJunitTest {
     // Quando a classe for iniciada, esse metodo sera testado
     @Test
     public void testSomarDoisNumerosPositivos() {
-        assertEquals(true,s.Somar(2, 2));
+        assertEquals(4,s.Somar(2, 2));
     }
 
     
  
     @Test
     public void testSomarDoisNumerosSendoZero() {
-        assertEquals(true,s.Somar(2, 0));
+        assertEquals(2,s.Somar(2, 0));
     }
 
     @Test
     public void testSomarDoisNumerosSendoDoisZeros() {
-        assertEquals(true,s.Somar(0, 0));
+        assertEquals(0,s.Somar(0, 0));
     }
 
     @Test
     public void testSomarDoisNumerosSendoNegativo() {
-        assertEquals(true,s.Somar(2, -2));
+        assertEquals(0,s.Somar(2, -2));
     }
 
     @Test
     public void testSubtracaoDoisNumeros() {
-        assertEquals(true,su.Subtrair (5, 2));
+        assertEquals(3,su.Subtrair (5, 2));
     }
 
     @Test
     public void testSubtracaoDoisNumerosSendoZero() {
-        assertEquals(true,su.Subtrair (5, 0));
+        assertEquals(5,su.Subtrair (5, 0));
     }
     
     @Test
     public void testSubtracaoDoisNumerosSendoDoisZeros() {
-        assertEquals(true,su.Subtrair (0, 0));
+        assertEquals(0,su.Subtrair (0, 0));
     }
 
     @Test
     public void testSubtracaoDoisNumerosSendoNegativo() {
-        assertEquals(true,su.Subtrair (5, -2));
+        assertEquals(7,su.Subtrair (5, -2));
     }
 
     @Test
     public void testMultiplicacaoDoisNumeros() {
-        assertEquals(true,m.Multiplicar (8, 6));
+        assertEquals(48,m.Multiplicar (8, 6));
     }
 
     @Test
     public void testMultiplicacaoDoisNumerosSendoZero() {
-        assertEquals(true,m.Multiplicar (8, 0));
+        assertEquals(0,m.Multiplicar (8, 0));
     }
 
     @Test
     public void testMultiplicacaoDoisNumerosSendoDoisZeros() {
-        assertEquals(true,m.Multiplicar (0, 0));
+        assertEquals(0,m.Multiplicar (0, 0));
     }
 
     @Test
     public void testMultiplicacaoDoisNumerosSendoNegativo() {
-        assertEquals(true,m.Multiplicar (8, -6));
+        assertEquals(-48,m.Multiplicar (8, -6));
     }
 
     @Test
     public void testDivisaoDoisNumeros() {
-        assertEquals(true,d.Dividir (3, 3));
+        assertEquals(1,d.Dividir (3, 3));
     }
 
     @Test
     public void testDivisaoDoisNumerosSendoZero() {
-        assertEquals(true,d.Dividir (3, 0));
+        assertEquals(0,d.Dividir (3, 0));
     }
 
     @Test
     public void testDivisaoDoisNumerosSendoDoisZeros() {
-        assertEquals(true,d.Dividir (0, 0));
+        assertEquals(0,d.Dividir (0, 0));
     }
 
     @Test
     public void testDivisaoDoisNumerosSendoNegativo() {
-        assertEquals(true,d.Dividir (5, -2));
+        assertEquals(-1,d.Dividir (5, -5));
     }
  
 }
